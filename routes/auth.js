@@ -54,7 +54,7 @@ router.post("/vote", (req, res) => {
       if (result) {
         Result.findOneAndUpdate(
           { language: req.body.key },
-          { votes: result.votes + 1 }
+          { votes: parseInt(result.votes) + 1 }
         )
           .then(rowAffected => console.log(rowAffected))
           .catch(err => console.log(err));
