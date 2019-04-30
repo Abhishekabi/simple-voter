@@ -3,5 +3,5 @@ module.exports = {
   GOOGLE_CLIENT_ID:
     "251306338984-cnpbge18njq7leb1eudd78gjc1p8rv73.apps.googleusercontent.com",
   GOOGLE_CLIENT_SECRET: "Sr4En3tifM1PdE5UFrbuz8ES",
-  GOOGLE_CALLBACK: "http://localhost:3000/auth/google/callback"
+  GOOGLE_CALLBACK: "https://language-voter.herokuapp.com/auth/google/callback"
 };
