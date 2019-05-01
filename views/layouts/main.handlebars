@@ -21,15 +21,15 @@
 <body style="background-color: rgb(71, 69, 69);">
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="/">
-            <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                class="d-inline-block align-top" alt="" />
+            <img src="/img/code.svg" width="30" height="30" class="d-inline-block align-top mr-2" />
             Simple Voter
         </a>
         {{#if name}}
         <a href="/auth/logout" class="nav-link btn btn-xs btn-danger">Logout</a>
-        {{/if}}
-        {{#if msg}}
+        {{else if msg}}
         <a href="/auth/logout" class="nav-link btn btn-xs btn-danger">Logout</a>
+        {{else}}
+        <a href="/auth/google" class="nav-link btn btn-xs btn-outline-info">Login</a>
         {{/if}}
     </nav>
     {{{body}}}
